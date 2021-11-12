@@ -1,0 +1,45 @@
+.wrapper{ 
+	display:flex; 
+	width:fit-content;
+	margin:0 auto;
+	align-items:center;
+	flex-direction:column; 
+	
+  } 
+  .wrapper:hover > .menu-content{
+	max-height:1000px;
+  }
+  .menu{ 
+	border:1px solid green; 
+	width:fit-content;
+	cursor:pointer;
+	
+  }
+  .menu:hover{
+	color:red;
+  }
+  .menu-content{
+	display:flex;
+	max-height:0;
+	overflow:hidden;
+	flex-direction:column;
+	background:red;
+	margin-top:.5rem;
+	transition:max-height 3s  ;
+  }
+  
+  .menu-content > span{
+	padding:1rem;
+	cursor:pointer;
+	background-color: black;
+	color: White;
+	margin: 1rem;
+	
+  }
+  
+  .menu-content > span:hover{
+	padding:1rem;
+	cursor:pointer;
+	background-color: black;
+	color: White;
+  }
